@@ -4,13 +4,14 @@
 * Description:
 * Simple wrapper header containing all generated files.
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
-* mtb-pdl-cat2 1.0.0.2197
-* personalities 3.0.0.0
-* udd 3.0.0.717
+* Tools Package 2.4.0.5880
+* mtb-pdl-cat2 1.4.0.5508
+* personalities 5.0.0.0
+* udd 3.0.0.1434
 *
 ********************************************************************************
-* Copyright 2020 Cypress Semiconductor Corporation
+* Copyright 2021 Cypress Semiconductor Corporation (an Infineon company) or
+* an affiliate of Cypress Semiconductor Corporation.
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,6 +37,7 @@ extern "C" {
 #include "cycfg_notices.h"
 #include "cycfg_system.h"
 #include "cycfg_clocks.h"
+#include "cycfg_dmas.h"
 #include "cycfg_routing.h"
 #include "cycfg_peripherals.h"
 #include "cycfg_pins.h"

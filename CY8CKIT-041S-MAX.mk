@@ -6,7 +6,9 @@
 #
 ################################################################################
 # \copyright
-# Copyright 2019-2020 Cypress Semiconductor Corporation
+# Copyright 2019-2021 Cypress Semiconductor Corporation (an Infineon company) or
+# an affiliate of Cypress Semiconductor Corporation
+#
 # SPDX-License-Identifier: Apache-2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,10 +32,13 @@ endif
 include $(dir $(lastword $(MAKEFILE_LIST)))/locate_recipe.mk
 
 # MCU device selection
+#    Changing the device should be done using "make bsp" or "make update_bsp" with the "DEVICE_GEN"
+#    variable set to the new MCU. If you change the device manually here you must also update the
+#    design.modus file and re-run the device configurator.
 DEVICE:=CY8C4149AZI-S598
 
 # Additional components supported by the target
-COMPONENTS+=BSP_DESIGN_MODUS CAT2 PSOC4HAL
+COMPONENTS+=$(TARGET) BSP_DESIGN_MODUS CAT2 PSOC4HAL
 
 # Use CyHAL
 DEFINES+=CY_USING_HAL

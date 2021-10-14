@@ -4,13 +4,14 @@
 * Description:
 * System configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
-* mtb-pdl-cat2 1.0.0.2197
-* personalities 3.0.0.0
-* udd 3.0.0.717
+* Tools Package 2.4.0.5880
+* mtb-pdl-cat2 1.4.0.5508
+* personalities 5.0.0.0
+* udd 3.0.0.1434
 *
 ********************************************************************************
-* Copyright 2020 Cypress Semiconductor Corporation
+* Copyright 2021 Cypress Semiconductor Corporation (an Infineon company) or
+* an affiliate of Cypress Semiconductor Corporation.
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,6 +32,7 @@
 
 #include "cycfg_notices.h"
 #include "cy_sysclk.h"
+#include "cy_syspm.h"
 
 #if defined(__cplusplus)
 extern "C" {
@@ -49,7 +51,16 @@ extern "C" {
 #define CY_CFG_SYSCLK_IMO_FREQ_HZ 48000000UL
 #define CY_CFG_SYSCLK_IMO_FREQ_MHZ 48UL
 #define CY_CFG_SYSCLK_IMO_FREQ CY_SYSCLK_IMO_48MHZ
+#define CY_CFG_SYSCLK_IMO_LOCK CY_SYSCLK_IMO_LOCK_NONE
 #define srss_0_clock_0_sysclk_0_ENABLED 1U
+#define srss_0_power_0_ENABLED 1U
+#define CY_CFG_PWR_MODE_ACTIVE 0x04UL
+#define CY_CFG_PWR_MODE_SLEEP 0x08UL
+#define CY_CFG_PWR_MODE_DEEPSLEEP 0x10UL
+#define CY_CFG_PWR_SYS_IDLE_MODE CY_CFG_PWR_MODE_DEEPSLEEP
+#define CY_CFG_PWR_DEEPSLEEP_LATENCY 0UL
+#define CY_CFG_PWR_VDDA_MV 5000
+#define CY_CFG_PWR_VDDD_MV 5000
 
 __WEAK void cycfg_ClockStartupError(uint32_t error, cy_en_sysclk_status_t status);
 

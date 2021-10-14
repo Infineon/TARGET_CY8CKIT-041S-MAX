@@ -4,13 +4,14 @@
 * Description:
 * Clock configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
-* mtb-pdl-cat2 1.0.0.2197
-* personalities 3.0.0.0
-* udd 3.0.0.717
+* Tools Package 2.4.0.5880
+* mtb-pdl-cat2 1.4.0.5508
+* personalities 5.0.0.0
+* udd 3.0.0.1434
 *
 ********************************************************************************
-* Copyright 2020 Cypress Semiconductor Corporation
+* Copyright 2021 Cypress Semiconductor Corporation (an Infineon company) or
+* an affiliate of Cypress Semiconductor Corporation.
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,21 +30,21 @@
 #include "cycfg_clocks.h"
 
 #if defined (CY_USING_HAL)
-	const cyhal_resource_inst_t CYBSP_MSC_CLK_DIV_obj = 
-	{
-		.type = CYHAL_RSC_CLOCK,
-		.block_num = CYBSP_MSC_CLK_DIV_HW,
-		.channel_num = CYBSP_MSC_CLK_DIV_NUM,
-	};
+    const cyhal_resource_inst_t CYBSP_MSC_CLK_DIV_obj = 
+    {
+        .type = CYHAL_RSC_CLOCK,
+        .block_num = CYBSP_MSC_CLK_DIV_HW,
+        .channel_num = CYBSP_MSC_CLK_DIV_NUM,
+    };
 #endif //defined (CY_USING_HAL)
 
 
 void init_cycfg_clocks(void)
 {
-	Cy_SysClk_PeriphDisableDivider(CY_SYSCLK_DIV_16_BIT, 0U);
-	Cy_SysClk_PeriphSetDivider(CY_SYSCLK_DIV_16_BIT, 0U, 0U);
-	Cy_SysClk_PeriphEnableDivider(CY_SYSCLK_DIV_16_BIT, 0U);
+    Cy_SysClk_PeriphDisableDivider(CY_SYSCLK_DIV_16_BIT, 0U);
+    Cy_SysClk_PeriphSetDivider(CY_SYSCLK_DIV_16_BIT, 0U, 0U);
+    Cy_SysClk_PeriphEnableDivider(CY_SYSCLK_DIV_16_BIT, 0U);
 #if defined (CY_USING_HAL)
-	cyhal_hwmgr_reserve(&CYBSP_MSC_CLK_DIV_obj);
+    cyhal_hwmgr_reserve(&CYBSP_MSC_CLK_DIV_obj);
 #endif //defined (CY_USING_HAL)
 }

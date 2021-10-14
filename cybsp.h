@@ -6,7 +6,9 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2020 Cypress Semiconductor Corporation
+ * Copyright 2018-2021 Cypress Semiconductor Corporation (an Infineon company) or
+ * an affiliate of Cypress Semiconductor Corporation
+ *
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,15 +34,21 @@ extern "C" {
 #endif
 
 /**
- * \addtogroup group_bsp_macros Macros
+ * \addtogroup group_bsp_errors Error Codes
  * \{
+ * Error codes specific to the board.
  */
 
-/** \} group_bsp_macros */
+/** Failed to configure sysclk power management callback */
+#define CYBSP_RSLT_ERR_SYSCLK_PM_CALLBACK  \
+    (CY_RSLT_CREATE(CY_RSLT_TYPE_ERROR, CY_RSLT_MODULE_ABSTRACTION_BSP, 0))
+
+/** \} group_bsp_errors */
 
 /**
  * \addtogroup group_bsp_functions Functions
  * \{
+ * All functions exposed by the board.
  */
 
 /**

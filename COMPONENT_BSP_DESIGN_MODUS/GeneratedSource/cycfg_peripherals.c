@@ -4,13 +4,14 @@
 * Description:
 * Peripheral Hardware Block configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
-* mtb-pdl-cat2 1.0.0.2197
-* personalities 3.0.0.0
-* udd 3.0.0.717
+* Tools Package 2.4.0.5880
+* mtb-pdl-cat2 1.4.0.5508
+* personalities 5.0.0.0
+* udd 3.0.0.1434
 *
 ********************************************************************************
-* Copyright 2020 Cypress Semiconductor Corporation
+* Copyright 2021 Cypress Semiconductor Corporation (an Infineon company) or
+* an affiliate of Cypress Semiconductor Corporation.
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,17 +31,17 @@
 
 cy_stc_msc_context_t cy_msc_0_context = 
 {
-	.lockKey = CY_MSC_NONE_KEY,
+    .lockKey = CY_MSC_NONE_KEY,
 };
 cy_stc_msc_context_t cy_msc_1_context = 
 {
-	.lockKey = CY_MSC_NONE_KEY,
+    .lockKey = CY_MSC_NONE_KEY,
 };
 
 
 void init_cycfg_peripherals(void)
 {
-	Cy_SysClk_PeriphAssignDivider(PCLK_MSC0_CLOCK_MSC, CY_SYSCLK_DIV_16_BIT, 0U);
+    Cy_SysClk_PeriphAssignDivider(PCLK_MSC0_CLOCK_MSC, CY_SYSCLK_DIV_16_BIT, 0U);
 
-	Cy_SysClk_PeriphAssignDivider(PCLK_MSC1_CLOCK_MSC, CY_SYSCLK_DIV_16_BIT, 0U);
+    Cy_SysClk_PeriphAssignDivider(PCLK_MSC1_CLOCK_MSC, CY_SYSCLK_DIV_16_BIT, 0U);
 }
