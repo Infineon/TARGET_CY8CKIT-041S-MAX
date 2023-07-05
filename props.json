@@ -1,6 +1,6 @@
 {
     "core": {
-        "version": "3.0.0.29660"
+        "version": "3.1.0.33410"
     },
     "opt": {
         "props": {
@@ -17,9 +17,10 @@
                 "flash_384k",
                 "hal",
                 "i2c",
+                "i2s",
                 "j2",
                 "led",
-                "lin",
+                "low_power",
                 "lptimer",
                 "mcu_gp",
                 "memory",
@@ -49,7 +50,7 @@
             "min_tools": "3.0.0",
             "template": {
                 "id": "mtb-template-cat2",
-                "version": "release-v1.0.0"
+                "version": "release-v1.2.0"
             }
         }
     }
