@@ -49,5 +49,5 @@ DEVICE_CY8C4149AZI-S598_DIE:=PSoC4AS4
 DEVICE_CY8C4149AZI-S598_FLASH_KB:=384
 DEVICE_CY8C4149AZI-S598_SRAM_KB:=32
 DEVICE_LIST:=CY8C4149AZI-S598
-DEVICE_TOOL_IDS:=bsp-assistant capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator project-creator seglcd-configurator smartio-configurator
+DEVICE_TOOL_IDS:=bsp-assistant capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator memory-analyzer project-creator seglcd-configurator smartio-configurator
 RECIPE_DIR:=$(SEARCH_recipe-make-cat2)
