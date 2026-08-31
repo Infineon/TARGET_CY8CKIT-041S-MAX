@@ -6,8 +6,8 @@
 #
 ################################################################################
 # \copyright
-# Copyright 2019-2022 Cypress Semiconductor Corporation (an Infineon company) or
-# an affiliate of Cypress Semiconductor Corporation
+# Copyright (c) 2019-2026 Infineon Technologies AG
+# an affiliate of Infineon Technologies AG
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -47,6 +47,7 @@ DEVICE_COMPONENTS:=CAT2 PSOC4100SMAX
 DEVICE_CY8C4149AZI-S598_CORES:=CORE_NAME_CM0P_0
 DEVICE_CY8C4149AZI-S598_DIE:=PSoC4AS4
 DEVICE_CY8C4149AZI-S598_FLASH_KB:=384
+DEVICE_CY8C4149AZI-S598_IPBLOCKS:=M0S8CPUSSV3_S8 M0S8CPUSSV3_S8_V3 M0S8CRYPTO_VER2 M0S8CRYPTO_VER2_V2 M0S8EXCO_VER2 M0S8EXCO_VER2_V2 M0S8IOSS M0S8IOSS_V1 M0S8LCD_VER2 M0S8LCD_VER2_V2 M0S8LPCOMP_VER2 M0S8LPCOMP_VER2_V2 M0S8MSCV3 M0S8MSCV3_V1 M0S8PASS4A_VER2 M0S8PASS4A_VER2_V2 M0S8PERI M0S8PERI_V1 M0S8TCPWM_VER2 M0S8TCPWM_VER2_V2 M0S8WCO M0S8WCO_V1 MXAUDIOSS_VER2_S8 MXAUDIOSS_VER2_S8_V2 MXSCB MXSCB_V3 MXTTCANFD_VER2_S8 MXTTCANFD_VER2_S8_V2 S8SRSSLT S8SRSSLT_V1
 DEVICE_CY8C4149AZI-S598_SRAM_KB:=32
 DEVICE_LIST:=CY8C4149AZI-S598
 DEVICE_TOOL_IDS:=bsp-assistant capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator memory-analyzer project-creator seglcd-configurator smartio-configurator

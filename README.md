@@ -38,7 +38,7 @@ Components:
 
 Defines:
 * CYBSP_WIFI_CAPABLE - This define, disabled by default, causes the BSP to initialize the interface to an onboard wireless chip if it has one.
-* CY_USING_HAL - This define, enabled by default, specifies that the HAL is intended to be used by the application. This will cause the BSP to include the applicable header file and to initialize the system level drivers.
+* CY_USING_HAL - This define, enabled by default in some BSPs, specifies that the HAL is intended to be used by the application. This will cause the BSP to include the applicable header file and to initialize the system level drivers.  Newer BSPs pull in the v3.x HAL, which enables itself via its own makefile, so CY_USING_HAL is not present.
 * CYBSP_CUSTOM_SYSCLK_PM_CALLBACK - This define, disabled by default, causes the BSP to skip registering its default SysClk Power Management callback, if any, and instead to invoke the application-defined function `cybsp_register_custom_sysclk_pm_callback` to register an application-specific callback.
 
 ### Clock Configuration
@@ -64,12 +64,12 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 ## More information
 * [CY8CKIT-041S-MAX BSP API Reference Manual][api]
 * [CY8CKIT-041S-MAX Documentation](https://www.cypress.com/documentation/development-kitsboards/psoc-4100s-max-pioneer-kit-cy8ckit-041s-max)
-* [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
+* [Infineon Technologies AG](http://www.infineon.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox&trade;](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software)
 
 [api]: https://infineon.github.io/TARGET_CY8CKIT-041S-MAX/html/modules.html
 [settings]: https://infineon.github.io/TARGET_CY8CKIT-041S-MAX/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2025.
+© Infineon Technologies AG or an affiliate of Infineon Technologies AG, 2019-2026.
